@@ -19,8 +19,14 @@ def encoder(password):
     return encoded_password
 #print(encoder(str(12345555)))
 
+#added decoder - Joel Samuel
 def decoder(password):
-    # write decoder here
+    original = ""
+    for i in password:
+        a = int(i) - 3
+        b = str(a)
+        original += b
+    return original
     pass
 #print(decoder(45678888))
 
